@@ -82,7 +82,7 @@ public class FilterContactTypeAdapter extends RecyclerView.Adapter<FilterContact
                 final ContactType contactType = FilterContactTypeUtils.toContactType(data.getContactType());
                 final int iconRes = ContactTypeUtils.getIconRes(contactType);
                 binding.logo.setVisibility(View.VISIBLE);
-                binding.logo.setImageResource(iconRes);
+                binding.logo.setImageResource(iconRes); // новый пуш
             }
         }
     }
